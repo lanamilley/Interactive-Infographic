@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <title>Interactive Infographic: Vegetarian Toronto</title>
+
+  <link rel="shortcut icon" href="img/favicon.png">
+  <link rel="apple-itouch-icon" href="img/favicon.png">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/main.css">
+  <link href='http://fonts.googleapis.com/css?family=Fenix' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Oranienbaum' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="css/style4.css" />
+
+
+  	<!-- SUPERSCROLLORAMA http://johnpolacek.github.io/superscrollorama/ -->	
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+
+
+
+	<script type="text/javascript" src="js/modernizr.custom.79639.js"></script> 
+  	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  	<script src="js/cufon-yui.js" type="text/javascript"></script>
+
+	<!-- blue bird - animation -->
+	<script  type='text/javascript'>
+	$(document).ready(function(){
+		$(".blue-bird").hover(function() {
+			$(this).attr("src","img/blue-bird-hover.svg");
+				}, function() {
+			$(this).attr("src","img/blue-bird.svg");
+		});
+	});
+	</script>
+	<!-- blue bird - sound -->
+	<!-- credit: http://www.queness.com/code-snippet/6496/adding-sound-effect-to-a-tag-with-jquery Adding sound effect to A tag with jQuery -->
+	<script  type='text/javascript'>
+	    $(function(){
+        $('.blue-bird').click(function(){
+            $('embed').remove();
+            $('body').append('<embed src="sound/blue-bird-sound.wav" autostart="true" hidden="true" loop="false">');
+        });
+        $('.blue-bird').mouseover(function(){
+            $('embed').remove();
+            $('body').append('<embed src="sound/blue-bird-sound.wav" autostart="true" hidden="true" loop="false">');
+        });
+    }); 
+	</script>
+	<script  type='text/javascript'>
+	    $(function(){
+        $('.blue-bird').click(function(){
+            $('embed').remove();
+            $('body').append('<embed src="sound/blue-bird-sound.mp3" autostart="true" hidden="true" loop="false">');
+        });
+        $('.blue-bird').mouseover(function(){
+            $('embed').remove();
+            $('body').append('<embed src="sound/blue-bird-sound.mp3" autostart="true" hidden="true" loop="false">');
+        });
+    }); 
+	</script>
+
+
+		<!-- mail bird - animation -->
+	<script  type='text/javascript'>
+	$(document).ready(function(){
+		$(".contact").hover(function() {
+			$(this).attr("src","img/contact-bird-hover.svg");
+				}, function() {
+			$(this).attr("src","img/contact-bird.svg");
+		});
+	});
+	</script>
+
+
+	<!-- nav-type - animation -->
+	<script  type='text/javascript'>
+	$(document).ready(function(){
+		$(".nav-type").hover(function() {
+			$(this).attr("src","img/nav-type-hover.svg");
+				}, function() {
+			$(this).attr("src","img/nav-type.svg");
+		});
+	});
+	</script>
+
+	<!-- nav-diet - animation -->
+	<script  type='text/javascript'>
+	$(document).ready(function(){
+		$(".nav-diet").hover(function() {
+			$(this).attr("src","img/nav-diet-hover.svg");
+				}, function() {
+			$(this).attr("src","img/nav-diet.svg");
+		});
+	});
+	</script>
+
+	<!-- nav-resource - animation -->
+	<script  type='text/javascript'>
+	$(document).ready(function(){
+		$(".nav-resource").hover(function() {
+			$(this).attr("src","img/nav-resource-hover.svg");
+				}, function() {
+			$(this).attr("src","img/nav-resource.svg");
+		});
+	});
+	</script>
+
+	<!-- nav-eatveg - animation -->
+	<script  type='text/javascript'>
+	$(document).ready(function(){
+		$(".nav-eatveg").hover(function() {
+			$(this).attr("src","img/nav-eatveg-hover.svg");
+				}, function() {
+			$(this).attr("src","img/nav-eatveg.svg");
+		});
+	});
+	</script>
+
+	<!-- tidbits - animation -->
+	<script  type='text/javascript'>
+	$(document).ready(function(){
+		$(".tidbits").hover(function() {
+			$(this).attr("src","img/tips.svg");
+				}, function() {
+			$(this).attr("src","img/tidbits-hover.svg");
+		});
+	});
+	</script>
+
+	<!-- types of vegs - icons animation -->
+	<!-- vegan hover -->
+	<script  type='text/javascript'>
+	$(document).ready(function(){
+		$(".vegan-hover").hover(function() {
+			$(this).attr("src","img/vegan-icon-hover.svg");
+				}, function() {
+			$(this).attr("src","img/vegan-icon.svg");
+		});
+	});
+	</script>
+	<!-- lacto hover -->
+	<script  type='text/javascript'>
+	$(document).ready(function(){
+		$(".lacto-hover").hover(function() {
+			$(this).attr("src","img/lacto-icon-hover.svg");
+				}, function() {
+			$(this).attr("src","img/lacto-icon.svg");
+		});
+	});
+	</script>
+	<!-- lacto-ovo hover -->
+	<script  type='text/javascript'>
+	$(document).ready(function(){
+		$(".lacto-ovo-hover").hover(function() {
+			$(this).attr("src","img/lacto-ovo-icon-hover.svg");
+				}, function() {
+			$(this).attr("src","img/lacto-ovo-icon.svg");
+		});
+	});
+	</script>
+	<!-- lacto-ovo hover -->
+	<script  type='text/javascript'>
+	$(document).ready(function(){
+		$(".pescatarians-hover").hover(function() {
+			$(this).attr("src","img/pescatarians-icon-hover.svg");
+				}, function() {
+			$(this).attr("src","img/pescatarians-icon.svg");
+		});
+	});
+	</script>
+
+	<!-- show pyramid -->
+	<script  type='text/javascript'>
+	$(document).ready(function(){
+		$(".show-pyramid").hover(function() {
+			$(this).attr("src","img/pyramid-icon.svg");
+				}, function() {
+			$(this).attr("src","img/show-pyramid-icon.svg");
+		});
+	});
+	</script>
+
+
+	<!-- INFOGRAPHIC - EAT IN TORONTO -->
+	<script  type='text/javascript'>
+	$(document).ready(function(){
+		$(".infog-stores").hover(function() {
+			$(this).attr("src","img/infog-stores-hover.svg");
+				}, function() {
+			$(this).attr("src","img/infog-stores.svg");
+		});
+	});
+	</script>
+	<script  type='text/javascript'>
+	$(document).ready(function(){
+		$(".infog-market").hover(function() {
+			$(this).attr("src","img/infog-market-hover.svg");
+				}, function() {
+			$(this).attr("src","img/infog-market.svg");
+		});
+	});
+	</script>
+
+
+	<!-- jQuery toggle() hide/show -->
+	<script>
+	$(document).ready(function(){
+	  $(".vegan-hover").click(function(){
+	    $(".vegan-toggle").toggle();
+	  });
+	});
+	</script>
+	<script>
+	$(document).ready(function(){
+	  $(".lacto-ovo-hover").click(function(){
+	    $(".lacto-ovo-toggle").toggle();
+	  });
+	});
+	</script>
+
+
+<!-- Smooth Scrolling -->
+<script>
+$('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+        || location.hostname == this.hostname) {
+
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+           if (target.length) {
+             $('html,body').animate({
+                 scrollTop: target.offset().top
+            }, 1000);
+            return false;
+        }
+    }
+});
+</script>
+
+</head>
+	<body>
+		<div id="main-box">
+			<div class="tree"></div>
+
+			<header>
+				<div class="container">
+					<h1>Vegetarian Toronto</h1>
+					<a id="top"><div class="logo"><img src="img/veg-logo.svg"></div></a>
+						<a href="#types"><img src="img/nav-type.svg" class="nav-type"></a>
+						<a href="#pyramid"><img src="img/nav-diet.svg" class="nav-diet"></a>
+						<a href="#resource"><img src="img/nav-resource.svg" class="nav-resource"></a>
+						<a href="#eatveg"><img src="img/nav-eatveg.svg" class="nav-eatveg"></a>
+				</div>
+			</header>
+
+			<!-- BLUE BIRDIE -->
+			<img src="img/blue-bird.svg" class="blue-bird">
+
+			<!-- TIDBITS -->
+			<img src="img/tidbits-hover.svg" class="tidbits">
+
+			<!-- TYPES OF VEGS -->
+			<a id="types"><img src="img/types-intro.svg" class="types-intro"></a>
+
+			<!-- nav - types -->
+			<div class="nav">
+				<ul id="oe_menu" class="oe_menu">
+					<li><img src="img/vegan-icon.svg" class="vegan-hover">
+						<div>
+							<img src="img/vegan-open.svg">
+						</div>
+					</li>
+					<li><img src="img/lacto-icon.svg" class="lacto-hover">
+						<div>
+							<img src="img/lacto-open.svg">
+						</div>
+					</li>
+					<li><img src="img/lacto-ovo-icon.svg" class="lacto-ovo-hover">
+						<div>
+							<img src="img/lacto-ovo-open.svg">
+						</div>
+					</li>
+					<li><img src="img/pescatarians-icon.svg" class="pescatarians-hover">
+						<div>
+							<img src="img/pescatarians-open.svg">
+						</div>
+					</li>				
+				</ul>	
+			</div>
+
+			<a href="#top"><img src="img/linktotop.svg" class="link-top1"></a>
+
+			<!-- GUIDE PYRAMID -->
+			<img src="img/white-flowers.svg" class="white-flowers">
+			<img src="img/white-flowers-right.svg" class="white-flowers-right">
+			<a id="pyramid"><img src="img/guide-pyramid.svg" class="guide-pyramid" id="fly-it"></a>
+			<img src="img/show-pyramid-icon.svg" class="show-pyramid">
+			<img src="img/green-ornament.svg" class="green-ornament">
+
+			<!-- RESOURCE CENTRE -->
+			<a id="resource"><img src="img/resource-centre-intro.svg" class="resource-intro" id="fade-it"></a>
+			<img src="img/world-intro.svg" class="world-intro">
+			<!-- <p class="link-intro" >Around the world, vegetarianism is viewed in different lights. In some areas, there is cultural and even legal support, such as in India and the United Kingdom, where food labelling is in place which can make it easier for vegetarians to identify foods compatible with their diets.</p> -->
+
+			<p class="link-intro">[ <a href="http://en.wikipedia.org/wiki/Vegetarianism_by_country" target="_blank">wikipedia.org</a> ]</p>
+
+			<!-- world infographic -->
+			<img src="img/countries.svg" class="countries">
+			<!-- <img src="img/learn.svg" class="learn"> -->
+
+
+
+
+
+
+
+<!-- <div id="examples-2">
+			<h2 id="fling-it">Fling It</h2>
+			<h2 id="move-it">Move It</h2>
+		</div> -->
+		
+			<!-- <img src="img/countries.svg" class="countries" id="Fade It">
+			<h2 id="fade-it">Fade It</h2>
+			<h2 id="fly-it">Fly It</h2>
+			<h2 id="scale-it">Scale It</h2> -->
+			
+
+
+
+			
+			
+			<!-- <div class="learn-icons"> -->
+				<div class="learn-icon1">
+			
+				<ul class="ch-grid">
+					<li>
+						<div class="ch-item ch-img-1">				
+							<div class="ch-info-wrap">
+								<div class="ch-info">
+									<div class="ch-info-front ch-img-1"><img src="img/planet.svg"></div>
+									<div class="ch-info-back">
+										<h3>find out how eating a vegetarian or vegan diet</h3>
+										<p><a href="http://www.veg.ca/educators-students" target="_blank">Learn more</a></p>
+									</div>	
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+        </div>
+
+<div class="learn-icon2">
+			
+				<ul class="ch-grid">
+					<li>
+						<div class="ch-item ch-img-1">				
+							<div class="ch-info-wrap">
+								<div class="ch-info">
+									<div class="ch-info-front ch-img-1"><img src="img/helping.svg"></div>
+									<div class="ch-info-back">
+										<h3>explore local parks, and learn about the animals</h3>
+										<p><a href="http://www.veg.ca/educators-students" target="_blank">Learn more</a></p>
+									</div>	
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>			
+        </div>
+
+        <div class="learn-icon3">
+			
+				<ul class="ch-grid">
+					<li>
+						<div class="ch-item ch-img-1">				
+							<div class="ch-info-wrap">
+								<div class="ch-info">
+									<div class="ch-info-front ch-img-1"><img src="img/globally.svg"></div>
+									<div class="ch-info-back">
+										<h3>learn about protecting endangered animals and plants</h3>
+										<p><a href="http://www.veg.ca/educators-students" target="_blank">Learn more</a></p>
+									</div>	
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>			
+        </div>
+
+<!-- </div>  --><!-- .learn-icons -->
+<img src="img/grass-to-top.svg" class="grass-to">
+<a href="#top"><img src="img/linktotop2.svg" class="link-top2"></a>
+<!-- CONTACT BIRDIE -->
+			<a href="mailto:lanamilley@gmail.com?subject=Infographic: Vegetarian Toronto&body=Hi Lana!"><img src="img/contact-bird.svg" class="contact"></a>
+
+</div> <!-- #main-box -->
+		
+		<div class="veg-to-bg">
+		</div> <!-- .veg-to-bg -->
+
+		<div class="veg-to">
+		</div> <!-- .veg-to -->
+
+		<div class="veg-to-box">
+			<a id="eatveg"><img src="img/eat-veg-intro.svg" class="to-intro"></a>
+			<p class ="eatto-intro">Toronto is one of the top 10 large North American cities for vegans and vegetarians <a href="http://www.peta.org" target="_blank">[peta.org]</a>. Canada's largest city comes through for the hungry vegetarians of the Great White North. In Toronto you can try the raw vegan Pasta Bolognese at <a href="http://www.rawlicious.ca/canada/" target="_blank">Rawlicious</a>, or the eggplant in ginger sauce at <a href="http://www.commensal.com/en/restaurants" target="_blank">Commensal</a>.</p>
+
+
+<!-- THREE ICONS -->
+<!-- <div class="eat-icons"> -->
+				<div class="eat-icon1">
+			
+				<ul class="ch-grid">
+					<li>
+						<div class="ch-item ch-img-1">				
+							<div class="ch-info-wrap-to">
+								<div class="ch-info">
+									<div class="ch-info-front ch-img-2"><img src="img/dining-out.svg"></div>
+									<div class="ch-info-back-to">
+										<h3 class="to">Valuable Resources</h3>
+										<p class="p-to"><a href="http://www.veg.ca/directory/list/restaurants/" target="_blank">[veg.ca]</a></p>
+										<p class="p-to"><a href="http://www.happycow.net/north_america/canada/ontario/toronto/" target="_blank">[happycow.net]</a></p>
+									</div>	
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+        </div>
+
+<div class="eat-icon2">
+			
+				<ul class="ch-grid">
+					<li>
+						<div class="ch-item ch-img-1">				
+							<div class="ch-info-wrap-to">
+								<div class="ch-info">
+									<div class="ch-info-front ch-img-2"><img src="img/natural-food.svg"></div>
+									<div class="ch-info-back-to">
+										<h3 class="to">Valuable Resources</h3>
+										<p class="p-to"><a href="http://www.veg.ca/directory/list/natural-food-stores" target="_blank">[veg.ca]</a></p>
+										<p class="p-to"><a href="http://www.blogto.com/grocery/c/toronto/health+food" target="_blank" class="link-to">[blogTO.com]</a></p>
+										<!-- <p class="p-to"><a href="http://adamvacon.com/?p=286" target="_blank">[adamvacon.com]</a></p> -->
+									</div>	
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>			
+        </div>
+
+        <div class="eat-icon3">
+			
+				<ul class="ch-grid">
+					<li>
+						<div class="ch-item ch-img-1">				
+							<div class="ch-info-wrap-to">
+								<div class="ch-info">
+									<div class="ch-info-front ch-img-2"><img src="img/markets.svg"></div>
+									<div class="ch-info-back-to">
+										<h3 class="to">Valuable Resources</h3>
+										<p class="p-to"><a href="http://www.veg.ca/eat-veg/toronto-farmers-markets/" target="_blank">[veg.ca]</a></p>
+										<p class="p-to"><a href="http://www.tfmn.ca" target="_blank">[fmn.ca]</a></p>
+									</div>	
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>			
+        </div>
+
+<!-- </div>  --><!-- .eat-icons -->
+		<p class="dining">Vegetarians in Toronto can enjoy dining out. Many restaurants, cafe, specialty bakeries, and even fast food serviced happy to effort amazing food.</p>
+		<p class="stores">Torontonians have a lot of choice on where to go for fresh local produce, natural cleaners, aluminum-free deodorant, animal-free soaps, and bulk lentils.</p>
+		<p class="markets">Eat local and organic. Buying locally grown food supports nearby farmers, and greatly reduces the energy and resources necessary to transport and store foods.</p>
+
+		<!-- INFOGRAPHIC - EAT IN TORONTO -->
+		<img src="img/infog-dining.svg" class="infog-dining">
+		<img src="img/infog-stores.svg" class="infog-stores">
+		<img src="img/infog-market.svg" class="infog-market">
+
+
+
+		
+		<div class="footer">
+			<a href="http://www.lanamilley.com" target="_blank"><img src="img/copyright.svg" class="copy"></a>
+			<img src="img/grass-footer.svg" class="grass-left">
+			<img src="img/grass-footer.svg" class="grass-right">
+		</div>
+
+
+</div> <!-- .veg-to-box -->
+
+
+
+
+<!-- <h2 id="bring-it">Bring It</h2> -->
+
+
+		<!-- </div> --> <!-- #main-box -->
+
+		<!-- js for types of vegs -->
+		<!-- credit: http://tympanus.net/codrops/2010/11/25/overlay-effect-menu/ Overlay Effect Menu with jQuery by Mary Lou -->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(function() {
+				var $oe_menu		= $('#oe_menu');
+				var $oe_menu_items	= $oe_menu.children('li');
+				var $oe_overlay		= $('#oe_overlay');
+
+                $oe_menu_items.bind('mouseenter',function(){
+					var $this = $(this);
+					$this.addClass('slided selected');
+					$this.children('div').css('z-index','9999').stop(true,true).slideDown(200,function(){
+						$oe_menu_items.not('.slided').children('div').hide();
+						$this.removeClass('slided');
+					});
+				}).bind('mouseleave',function(){
+					var $this = $(this);
+					$this.removeClass('selected').children('div').css('z-index','1');
+				});
+
+				$oe_menu.bind('mouseenter',function(){
+					var $this = $(this);
+					$oe_overlay.stop(true,true).fadeTo(200, 0.1);
+					$this.addClass('hovered');
+				}).bind('mouseleave',function(){
+					var $this = $(this);
+					$this.removeClass('hovered');
+					$oe_overlay.stop(true,true).fadeTo(200, 0);
+					$oe_menu_items.children('div').hide();
+				})
+            });
+        </script>
+
+
+        <!-- SuperScrollorama -->
+        <script type="text/javascript" src="js/greensock/TweenMax.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  	<script>window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js"><\/script>')</script>
+  	<script src="js/jquery.lettering-0.6.1.min.js"></script>
+	<script src="js/jquery.superscrollorama.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('body').css('visibility','visible');
+
+			// hide content until after title animation
+			$('#content-wrapper').css('display','none');
+			
+			// lettering.js to split up letters for animation
+			$('#title-line1').lettering();
+			$('#title-line2').lettering();
+			$('#title-line3').lettering();
+			
+			// TimelineLite for title animation, then start up superscrollorama when complete
+			(new TimelineLite({onComplete:initScrollAnimations}))
+				.from( $('#title-line1 span'), .4, {delay: 1, css:{right:'1000px'}, ease:Back.easeOut})
+				.from( $('#title-line2'), .4, {css:{top:'1000px',opacity:'0'}, ease:Expo.easeOut})
+				.append([
+					TweenMax.from( $('#title-line3 .char1'), .25+Math.random(), {css:{top: '-200px', right:'1000px'}, ease:Elastic.easeOut}),
+					TweenMax.from( $('#title-line3 .char2'), .25+Math.random(), {css:{top: '300px', right:'1000px'}, ease:Elastic.easeOut}),
+					TweenMax.from( $('#title-line3 .char3'), .25+Math.random(), {css:{top: '-400px', right:'1000px'}, ease:Elastic.easeOut}),
+					TweenMax.from( $('#title-line3 .char4'), .25+Math.random(), {css:{top: '-200px', left:'1000px'}, ease:Elastic.easeOut}),
+					TweenMax.from( $('#title-line3 .char5'), .25+Math.random(), {css:{top: '200px', left:'1000px'}, ease:Elastic.easeOut})
+				])
+				.to( $('#title-info'), .5, {css:{opacity:.99, 'margin-top':0}, delay:-1, ease:Quad.easeOut});
+			
+			function initScrollAnimations() {
+				$('#content-wrapper').css('display','block');
+				var controller = $.superscrollorama();
+			
+				// title tweens
+				$('.title-line span').each(function() {
+					controller.addTween(10, TweenMax.to(this, .5, {css:{top: Math.random()*-200-600, left: (Math.random()*1000)-500, rotation:Math.random()*720-360, 'font-size': Math.random()*300+150}, ease:Quad.easeOut}),200);
+				});
+				controller.addTween(10, TweenMax.to($('#title-line1'), .75, {css:{top: 600}, ease:Quad.easeOut}),200);
+				controller.addTween(10, TweenMax.to($('#title-line2'), .75, {css:{top: 200}, ease:Quad.easeOut}),200);
+				controller.addTween(10, TweenMax.to($('#title-line3'), .75, {css:{top: -100}, ease:Quad.easeOut},200));
+
+				// showcase tweens
+				controller.addTween('#showcase h1', TweenMax.from( $('#showcase h1'), .75, {css:{letterSpacing:20,opacity:0}, ease:Quad.easeOut}));
+				controller.addTween('#showcase p', TweenMax.from( $('#showcase p'), 1, {css:{opacity:0}, ease:Quad.easeOut}));
+				$('#showcase .gallery figure').css('position','relative').each(function() {
+					controller.addTween('#showcase .gallery', TweenMax.from( $(this), 1, {delay:Math.random()*.2,css:{left:Math.random()*200-100,top:Math.random()*200-100,opacity:0}, ease:Back.easeOut}));
+				});
+
+				// hire tweens
+				$('#hire h3').lettering().find('span').css('position','relative').each(function() {
+					controller.addTween('#hire h3', TweenMax.from( $(this), .25, {delay:Math.random()*.2,css:{left:Math.random()*1200-600,top:Math.random()*600-300,opacity:0}, ease:Expo.easeOut}),200);
+				});
+				controller.addTween('#hire p', TweenMax.from( $('#hire p'), .5, {css:{opacity:0}}));
+				
+				// individual element tween examples
+				controller.addTween('#fade-it', TweenMax.from( $('#fade-it'), .5, {css:{opacity: 0}}));
+				controller.addTween('#fly-it', TweenMax.from( $('#fly-it'), .25, {css:{right:'1000px'}, ease:Quad.easeInOut}));
+				controller.addTween('#spin-it', TweenMax.from( $('#spin-it'), .25, {css:{opacity:0, rotation: 720}, ease:Quad.easeOut}));
+				controller.addTween('#scale-it', TweenMax.fromTo( $('#scale-it'), .25, {css:{opacity:0, fontSize:'20px'}, immediateRender:true, ease:Quad.easeInOut}, {css:{opacity:1, fontSize:'240px'}, ease:Quad.easeInOut}));
+				controller.addTween('#smush-it', TweenMax.fromTo( $('#smush-it'), .25, {css:{opacity:0, 'letter-spacing':'30px'}, immediateRender:true, ease:Quad.easeInOut}, {css:{opacity:1, 'letter-spacing':'-10px'}, ease:Quad.easeInOut}), 0, 100); // 100 px offset for better timing
+				
+				// set duration, in pixels scrolled, for pinned element
+				var pinDur = 4000;
+				// create animation timeline for pinned element
+				var pinAnimations = new TimelineLite();
+				pinAnimations
+					.append(TweenMax.from($('#pin-frame-pin h2'), .5, {css:{marginTop:0}, ease: Quad.easeInOut}))
+					.append([
+						TweenMax.to($('#pin-frame-slide'), 1, {css:{marginLeft:0}}),
+						TweenMax.to($('#pin-frame-pin'), 1, {css:{marginLeft:'100%'}})
+					], .5)
+					.append([
+						TweenMax.to($('#pin-frame-wipe'), .5, {css:{top:0}}),
+						TweenMax.from($('#pin-frame-wipe h2'), .5, {css:{marginTop:'-600px'}})
+					], .5)
+					.append(TweenMax.from($('#pin-frame-bounce'), 5, {css:{marginTop:'-100%'}, ease:Bounce.easeOut}), .5)
+					.append(TweenMax.from($('#pin-frame-color'), .25, {css:{opacity:0}}), .5)
+					.append([
+						TweenMax.to($('#pin-frame-color'), .25, {css:{backgroundColor:'blue'}}),
+						TweenMax.to($('#pin-frame-color h2'), .25, {css:{color:'orange'}})
+					])
+					.append([
+						TweenMax.to($('#pin-frame-color'), .25, {css:{backgroundColor:'green'}}),
+						TweenMax.to($('#pin-frame-color h2'), .25, {css:{color:'red'}})
+					])
+					.append([
+						TweenMax.to($('#pin-frame-color'), .25, {css:{backgroundColor:'yellow'}}),
+						TweenMax.to($('#pin-frame-color h2'), .25, {css:{color:'purple'}})
+					])
+					.append([
+						TweenMax.to($('#pin-frame-color'), .25, {css:{backgroundColor:'orange'}}),
+						TweenMax.to($('#pin-frame-color h2'), .25, {css:{color:'blue'}})
+					])
+					.append([
+						TweenMax.to($('#pin-frame-color'), .25, {css:{backgroundColor:'red'}}),
+						TweenMax.to($('#pin-frame-color h2'), .25, {css:{color:'green'}})
+					])
+					.append([
+						TweenMax.to($('#pin-frame-color'), .25, {css:{backgroundColor:'#222438'}}),
+						TweenMax.to($('#pin-frame-color h2'), .25, {css:{color:'#FFB000'}})
+					])
+					.append(TweenMax.to($('#pin-frame-unpin'), .5, {css:{top:'100px'}}));
+				
+				// pin element, use onPin and onUnpin to adjust the height of the element
+				controller.pin($('#examples-pin'), pinDur, {
+					anim:pinAnimations, 
+					onPin: function() {
+						$('#examples-pin').css('height','100%');
+					}, 
+					onUnpin: function() {
+						$('#examples-pin').css('height','600px');
+					}
+				});
+				controller.pin($('#examples-2'), 3000, {
+					anim: (new TimelineLite())
+						.append(
+							TweenMax.fromTo($('#fling-it'), 2, 
+								{css:{left:-1000, top: 500, rotation: -360}, immediateRender:true}, 
+								{css:{left:2000, top: -600, rotation: 360}})
+						)
+						.append(
+							TweenMax.fromTo($('#move-it'), .75, 
+								{css:{left: -200, top: 800}, immediateRender:true}, 
+								{css:{top: -200}}),
+								-1.5 // offset for better timing
+						)
+						.append(
+							TweenMax.to($('#move-it'), .5, 
+								{css:{left: 200}})
+						)
+						.append(
+							TweenMax.to($('#move-it'), .5, 
+								{css:{top: 0}})
+						)
+						.append(
+							TweenMax.to($('#move-it'), .5, 
+								{css:{left: 0}})
+						)
+				})
+
+				// parallax example, setting duration ties animation to scroll position
+				// you can target a scroll position instead of an element (whose position can change)
+				controller.addTween(
+					'#examples-parallax',
+					(new TimelineLite())
+						.append([
+							TweenMax.fromTo($('#parallax-it-left'), 1, 
+								{css:{top: 200}, immediateRender:true}, 
+								{css:{top: -600}}),
+							TweenMax.fromTo($('#parallax-it-right'), 1, 
+								{css:{top: 500}, immediateRender:true}, 
+								{css:{top: -1250}})
+						]),
+					1000 // scroll duration of tween
+				);
+
+				$('#bring-it').lettering();
+				controller.addTween(
+					'#bring-it',
+					(new TimelineLite())
+						.append([
+							TweenMax.from($('#bring-it .char1'), 1, 
+								{css:{fontSize: 0}, immediateRender:true, ease:Elastic.easeOut}),
+							TweenMax.from($('#bring-it .char2'), .6, 
+								{css:{fontSize: 0}, immediateRender:true, ease:Elastic.easeOut}),
+							TweenMax.from($('#bring-it .char3'), 1.1, 
+								{css:{fontSize: 0}, immediateRender:true, ease:Elastic.easeOut}),
+							TweenMax.from($('#bring-it .char4'), .7, 
+								{css:{fontSize: 0}, immediateRender:true, ease:Elastic.easeOut}),
+							TweenMax.from($('#bring-it .char5'), .9, 
+								{css:{fontSize: 0}, immediateRender:true, ease:Elastic.easeOut}),
+							TweenMax.from($('#bring-it .char6'), 1.2, 
+								{css:{fontSize: 0}, immediateRender:true, ease:Elastic.easeOut}),
+							TweenMax.from($('#bring-it .char7'), .6, 
+								{css:{fontSize: 0}, immediateRender:true, ease:Elastic.easeOut}),
+							TweenMax.from($('#bring-it .char8'), .8, 
+								{css:{fontSize: 0}, immediateRender:true, ease:Elastic.easeOut})
+						])
+						,
+					1200,
+					-100 // offset for better timing
+				);
+
+			}
+		});
+	</script>
+
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-2821890-9']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+	</body>
+</html>
